@@ -1,0 +1,13 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+.env
+*.egg-info/
+build/
+outputs/monte_carlo/*/*_uncertainty_cube.npz
+
+# Keep research input data private
+/data/*
+!/data/README.txt

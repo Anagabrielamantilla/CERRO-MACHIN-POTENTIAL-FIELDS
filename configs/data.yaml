@@ -1,0 +1,32 @@
+project:
+  name: CERRO-MACHIN-POTENTIAL-FIELDS
+  area: Cerro Machin geothermal area, Colombia
+
+coordinates:
+  projected_crs: EPSG:9377
+  projected_crs_name: MAGNA-SIRGAS 2018 / Origen-Nacional
+  horizontal_units: m
+  vertical_datum: null  # TODO: confirm
+  z_positive: up
+
+common_mesh:
+  mesh: outputs/common_mesh/tensor_mesh.json
+  geometry: outputs/common_mesh/common_mesh_geometry.npz
+  manifest: outputs/common_mesh/common_mesh_manifest.json
+
+gravity:
+  path: data/field/gravity/EstacionesGrav.txt
+  columns: [x, y, z, value]
+  value_units: null  # TODO: confirm mGal or other
+  processing_status: processed_and_ready_for_inversion
+  corrections: completed  # Exact processing history should still be documented
+
+magnetics:
+  path: data/field/magnetics/Estaciones_Mag.csv
+  columns: [x, y, z, anomaly_nt]
+  value_units: nT
+  valid_rows: 165
+  empty_trailing_rows: 834
+  processing_status: processed_and_ready_for_inversion
+  corrections: completed  # Exact processing history should still be documented
+

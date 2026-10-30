@@ -1,0 +1,16 @@
+name: cerro-machin-potential-fields
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - numpy
+  - pandas
+  - matplotlib
+  - scipy
+  - pyproj
+  - pyyaml
+  - jupyterlab
+  - nbformat
+  - pip:
+      - -e .[geophysics,montecarlo,dev]

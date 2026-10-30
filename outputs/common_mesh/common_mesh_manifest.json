@@ -1,0 +1,18 @@
+{
+  "mesh_type": "TensorMesh",
+  "crs": "EPSG:9377",
+  "z_positive": "up",
+  "shape_cells": [
+    60,
+    54,
+    28
+  ],
+  "n_cells": 90720,
+  "n_active": 71390,
+  "topography_source": "dem_plus_stations",
+  "topography_path": "/home/hdspgeo/Downloads/topografia_dem_XYZ.txt",
+  "mesh_sha256": "d3e3db1560160bdbb850931262d4dbd457e9b0c3610c313ac36ba6a66681d9d8",
+  "geometry_sha256": "a6df0e3f2647a8408f4e737dd33eccec92e74276eb475645b4301777ba97831c",
+  "rule": "All independent inversions must load these files; do not rebuild the mesh.",
+  "public_access_note": "Topography withheld. Request original input data and geometry from the lead author before rerunning inversions."
+}

@@ -1,0 +1,22 @@
+{
+  "gravity": {
+    "mean_error_percent_N100": 2.5199885458128644,
+    "std_error_percent_N100": 7.006161103768767,
+    "mean_error_percent_N500": 0.9415064528520453,
+    "std_error_percent_N500": 2.5458401770766006,
+    "stable_N_mean_below_1pct": 425,
+    "stable_N_std_below_1pct": 850,
+    "stable_N_mean_below_0_5pct": 775,
+    "stable_N_std_below_0_5pct": 950
+  },
+  "magnetic": {
+    "mean_error_percent_N100": 0.7268893546404178,
+    "std_error_percent_N100": 7.578784565406918,
+    "mean_error_percent_N500": 0.2853060319757332,
+    "std_error_percent_N500": 2.285227846640019,
+    "stable_N_mean_below_1pct": 70,
+    "stable_N_std_below_1pct": 850,
+    "stable_N_mean_below_0_5pct": 275,
+    "stable_N_std_below_0_5pct": 950
+  }
+}

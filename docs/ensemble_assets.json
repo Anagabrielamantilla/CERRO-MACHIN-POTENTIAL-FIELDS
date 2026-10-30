@@ -1,0 +1,20 @@
+{
+  "repository": "Anagabrielamantilla/CERRO-MACHIN-POTENTIAL-FIELDS-PRIVATE",
+  "release": "data-v1",
+  "assets": [
+    {
+      "kind": "gravity",
+      "filename": "gravity_monte_carlo_uncertainty_cube.npz",
+      "bytes": 552803945,
+      "sha256": "ea9e5c0fc6999693aa1e06ccca9aca80b7dbdd1c2f647a6bb3b69ff63fceff00",
+      "destination": "outputs/monte_carlo/gravity/gravity_monte_carlo_uncertainty_cube.npz"
+    },
+    {
+      "kind": "magnetic",
+      "filename": "magnetic_monte_carlo_uncertainty_cube.npz",
+      "bytes": 257840883,
+      "sha256": "de7f903c8533862a094c55583a11731da56199bbf379efaa3a924e4d3a715d2a",
+      "destination": "outputs/monte_carlo/magnetic/magnetic_monte_carlo_uncertainty_cube.npz"
+    }
+  ]
+}

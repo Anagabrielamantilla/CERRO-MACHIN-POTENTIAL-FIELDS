@@ -1,0 +1,37 @@
+data:
+  path: data/field/magnetics/Estaciones_Mag.csv
+  units: nT
+  receiver_height_offset_m: 1.0
+
+validation:
+  holdout_stride: 5
+
+uncertainty:
+  absolute_floor_nt: 5.0
+  fraction_of_maximum: 0.02
+
+topography:
+  path: data/processed/topography/topography_xyz_corregida.txt
+  source: topografia_dem_xyz_plus_station_elevations
+
+inducing_field:
+  model: IGRF-14
+  assumed_date: 2026-07-01
+  longitude_deg: -75.36
+  latitude_deg: 4.48
+  elevation_km: 2.25
+  amplitude_nt: 29962.7
+  inclination_deg: 26.609
+  declination_deg: -7.860
+
+inversion:
+  # Absolute/effective magnetic susceptibility bounds (SI); chi >= 0 is enforced by ProjectedGNCG.
+  effective_susceptibility_lower_si: 0.0
+  effective_susceptibility_upper_si: 0.2
+  initial_susceptibility_si: 0.0001
+  beta0_ratio: 10.0
+  cooling_factor: 2.0
+  max_iterations: 25
+  cg_max_iterations: 15
+  cg_relative_tolerance: 0.01
+  target_chi_factor: 2.0

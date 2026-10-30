@@ -1,0 +1,38 @@
+data:
+  path: data/field/gravity/Datos_Grav_SGC_UIS.npy
+  units: mGal
+  receiver_height_offset_m: 1.0
+  observed_sign_to_simpeg: -1.0  # field positive-down -> SimPEG gz positive-up
+
+validation:
+  holdout_stride: 5  # 38 of 187 spatially ordered stations
+
+uncertainty:
+  # Includes measurement and representation error for the 250 m mesh/topography model.
+  absolute_floor_mgal: 0.70
+  fraction_of_maximum: 0.02
+
+topography:
+  path: data/processed/topography/topography_xyz_corregida.txt
+  source: topografia_dem_xyz_plus_station_elevations
+
+mesh:
+  core_cell_size_m: 250.0
+  horizontal_margin_m: 500.0
+  horizontal_padding_cells: 6
+  horizontal_padding_factor: 1.4
+  vertical_core_cells: 22
+  vertical_padding_cells: 6
+  vertical_padding_factor: 1.35
+  top_clearance_m: 50.0
+  topography_grid_points: 80
+
+inversion:
+  density_lower_gcc: -1.0
+  density_upper_gcc: 1.0
+  beta0_ratio: 10.0
+  cooling_factor: 2.0
+  max_iterations: 30
+  cg_max_iterations: 30
+  cg_relative_tolerance: 0.001
+  target_chi_factor: 1.0
